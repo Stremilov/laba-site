@@ -1,0 +1,297 @@
+{% extends 'vebpage/base.html' %}
+
+
+{% block head %}
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+<style>
+
+    header {
+        font-family: Geneva;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    header .logo {
+        color: black;
+        font-size: 2rem;
+        text-decoration: none;
+        font-size: 36px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    body {
+        background-color: #c4c2c27c;
+    }
+
+    body .btn-terms {
+        text-decoration: none;
+        border-bottom-color: white;
+        border-top-color: white;
+        border-left-color: white;
+        border-right-color: white;
+        border-bottom-width: 1px;
+        border-top-width: 1px;
+        border-left-width: 1px;
+        border-right-width: 1px;
+        border-bottom-style: solid;
+        border-top-style: solid;
+        border-left-style: solid;
+        border-right-style: solid;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+        padding-bottom: 9px;
+        padding-left: 11px;
+        padding-right: 11px;
+        padding-top: 9px;
+        color: white;
+        text-align: left;
+        float: left;
+        margin-left: 10px;
+    }
+
+    body .btn-stages {
+        text-decoration: none;
+        border-bottom-color: white;
+        border-top-color: white;
+        border-left-color: white;
+        border-right-color: white;
+        border-bottom-width: 1px;
+        border-top-width: 1px;
+        border-left-width: 1px;
+        border-right-width: 1px;
+        border-bottom-style: solid;
+        border-top-style: solid;
+        border-left-style: solid;
+        border-right-style: solid;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+        padding-bottom: 9px;
+        padding-left: 11px;
+        padding-right: 11px;
+        padding-top: 9px;
+        color: white;
+        text-align: left;
+        float: left;
+        margin-left: 10px;
+    }
+
+    body .btn-pres {
+        text-decoration: none;
+        border-bottom-color: white;
+        border-top-color: white;
+        border-left-color: white;
+        border-right-color: white;
+        border-bottom-width: 1px;
+        border-top-width: 1px;
+        border-left-width: 1px;
+        border-right-width: 1px;
+        border-bottom-style: solid;
+        border-top-style: solid;
+        border-left-style: solid;
+        border-right-style: solid;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+        padding-bottom: 9px;
+        padding-left: 11px;
+        padding-right: 11px;
+        padding-top: 9px;
+        color: white;
+        text-align: left;
+        float: left;
+        margin-left: 10px;
+    }
+
+    .base {
+        text-align: center;
+    }
+
+    .it {
+        height: 250px;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #3d3bff;
+        background-image: linear-gradient(to right, #3d3bff, #6a68fc64);
+        color: white;
+        border-radius: 15px;
+    }
+
+    .theme {
+        height: 70px;
+        width: 420px;
+        background-color: #00ffb6;
+        text-align: center;
+        font-size: 20px;
+        font-family: Geneva;
+        padding: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        border-bottom-color: black;
+        border-left-color: black;
+        border-right-color: black;
+        border-top-color: black;
+        border-top-width: 1px;
+        border-bottom-width: 1px;
+        border-left-width: 1px;
+        border-right-width: 1px;
+        border-bottom-style: solid;
+        border-top-style: solid;
+        border-left-style: solid;
+        border-right-style: solid;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+    }
+
+    .it h3 {
+        font-weight: bold;
+        padding: 10px;
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .it-info {
+        font-family: sans-serif;
+        margin: 50px;
+    }
+
+    .what-is-it {
+        font-family: Geneva;
+        font-size: 18px;
+        padding: 10px;
+        text-align: center;
+    }
+
+
+    footer .phone {
+        text-align: start;
+        color: black;
+    }
+
+    header .name {
+        margin-right: 30px;
+        color: black;
+    }
+
+    header .made_by {
+        color: black;
+    }
+
+    .first {
+        font-family: sans-serif;
+    }
+
+    footer {
+        bottom: 0px;
+        height: 20px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #c4c2c290;
+        border-top: 1px solid;
+        border-radius: 15px;
+        position: fixed;
+        font-family: sans-serif;
+    }
+
+    .sections {
+        height: 150px;
+        max-width: 500px;
+        background-color: rgb(41, 41, 41);
+        padding-top: 5px;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sec-name {
+        padding-left: 60px;
+    }
+
+    .sections h2 {
+        text-align: center;
+        color: white;
+        padding-bottom: 10px;
+        font-size: 35px;
+    }
+
+    body .made-by {
+        height: 50px;
+        max-width: 200px;
+        background-color: #3d3bff;
+        color: white;
+        border-radius: 15px;
+        text-align: center;
+        font-family: Geneva;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        text-align: center;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+</style>
+{% endblock %}
+
+{% block title %}
+История развития интеллектаульных информационных технологий
+{% endblock %}
+
+
+
+{% block body %}
+<header>
+    <a href="{% url 'vebpage:base' %}" class="logo">LevIt</a>
+</header>
+
+<section>
+    <div class="theme">
+    История развития интеллектуальных информационных технологий
+    </div>
+</section>
+
+<section class="it-info">
+    <div class="it">
+        <h3>Что такое интеллектаульные информационные технологии?</h3>
+        <div class="what-is-it">
+            <p>Это область научно-технического знания, которая объединяет информационные технологии, искусственный интеллект и
+                знания в различных областях.</p>
+            <p>Они представляют собой инструменты и методы для создания, хранения, обработки, передачи и использования информации с использованием компьютерных систем</p>
+        </div>
+    </div>
+
+</section>
+
+<section class="another-info">
+    <div class="sections">
+        <div><h2>Разделы</h2></div>
+        <div class="sec-name">
+        <p><a href="{% url 'vebpage:terms' %}" class="btn-terms">Термины</a></p>
+        <p><a href="{% url 'vebpage:stages' %}" class="btn-stages">Этапы развития ИТ</a></p>
+        <p><a href="{% url 'vebpage:presentation' %}" class="btn-pres">Презентация</a></p>
+        </div>
+    </div>
+</section>
+
+
+<div class="made-by">
+    <div class="made_by_name">Выполнил Стремилов Лев</div>
+    <div class="made_by_group">ИСТ-312</div>
+</div>
+
+{% endblock %}

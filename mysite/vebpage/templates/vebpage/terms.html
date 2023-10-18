@@ -1,0 +1,161 @@
+{% extends 'vebpage/base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+<style>
+
+    header {
+        font-family: Geneva;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    header .logo {
+        color: black;
+        font-size: 2rem;
+        text-decoration: none;
+        font-size: 36px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    body {
+        background-color: #c4c2c27c;
+        font-family: sans-serif;
+    }
+
+    .back {
+        text-align: center;
+    }
+
+    body .btn-back-to-main {
+        height: 50px;
+        width: 200px;
+        text-decoration: none;
+        border-bottom-color: black;
+        border-top-color: black;
+        border-left-color: black;
+        border-right-color: black;
+        border-bottom-width: 1px;
+        border-top-width: 1px;
+        border-left-width: 1px;
+        border-right-width: 1px;
+        border-bottom-style: solid;
+        border-top-style: solid;
+        border-left-style: solid;
+        border-right-style: solid;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+        padding-bottom: 9px;
+        padding-left: 11px;
+        padding-right: 11px;
+        padding-top: 9px;
+        color: black;
+        text-align: center;
+    }
+
+    body .terms {
+        padding-right: 200px;
+        padding-left: 200px;
+        padding-top: 50px;
+    }
+
+
+    .name {
+        text-align: center;
+    }
+
+    .theme {
+        margin-top: 40px;
+        height: 40px;
+        width: 250px;
+        background-color: #00ffb6;
+        text-align: center;
+        font-size: 30px;
+        font-family: Geneva;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom-color: black;
+        border-left-color: black;
+        border-right-color: black;
+        border-top-color: black;
+        border-top-width: 1px;
+        border-bottom-width: 1px;
+        border-left-width: 1px;
+        border-right-width: 1px;
+        border-bottom-style: solid;
+        border-top-style: solid;
+        border-left-style: solid;
+        border-right-style: solid;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+    }
+
+    .terms {
+        font-size: 17px;
+    }
+
+    body b {
+        font-size: 20px;
+    }
+
+</style>
+
+{% endblock %}
+
+{% block title %}
+Tremins
+{% endblock %}
+
+{% block body %}
+
+<header>
+    <a href="{% url 'vebpage:base' %}" class="logo">LevIt</a>
+</header>
+
+
+<div>
+    <div class="theme">Термины</div>
+
+    <div class="terms">
+        <p><b>Актуализация</b> — осуществление, переход из состояния возможности в состояние действительности. В сетевом планировании — отражение в сетевом графике выполненных работ.</p>
+        <br>
+        <p><b>База знаний</b> — информационная база, отражающая опыт конкретных людей, групп, обществ, человечества в целом, в решении творческих задач в выделенных сферах деятельности, традиционно считавшихся прерогативой интеллекта человека.</p>
+        <br>
+        <p><b>Знание</b> — проверенный практикой результат познания действительности, верное ее отражение в мышлении человека, обладание опытом и пониманием, которые являются правильными и в субъективном, и в объективном отношении, на основании которых можно построить суждения и выводы, кажущиеся достаточно надежными для того, чтобы рассматриваться как знание.</p>
+        <br>
+        <p><b>Инженер знаний</b> — человек, который проектирует или создает экспертную систему. Обычно это специалист по информатике, имеющий опыт применения прикладных методов искусственного интеллекта</p>
+        <br>
+        <p><b>Искусственный интеллект</b> — раздел информатики, связанный с разработкой интеллектуальных программ для компьютеров.</p>
+        <br>
+        <p><b>Метазнания</b> (Метаинтеллект) — знания экспертной системы о том, как эта система работает или рассуждает. В более широком смысле — это знания о знаниях.</p>
+        <br>
+        <p><b>Механизм объяснения</b> (Порождение объяснений — модели аргументации и рассуждения) — часть экспертной системы, которая объясняет, каким образом были получены решения, и обосновывает действия, предпринятые для их получения.</p>
+        <br>
+        <p><b>Мышление</b> — внутреннее активное стремление овладеть своими собственными представлениями, понятиями, побуждениями чувств и воли, воспоминаниями, ожиданиями и т. д. Мышление, которое по своей структуре может быть познающим или эмоциональным, состоит в постоянной перегруппировке всех возможных содержаний сознания и образовании или разрушении существующих между ними связей.</p>
+        <br>
+        <p><b>Мышления формы</b> (Человеческий интеллект) — способы и виды формальной организации мыслительного процесса, абстрагированные от его содержательного компонента.</p>
+        <br>
+        <p><b>Персептрон</b> (Нейронные сети) — обучаемая система, моделирующая восприятие и распознавание образов.</p>
+        <br>
+        <p><b>Пользователь</b> — человек, использующий экспертную систему, например конечный пользователь, эксперт, инженер знаний, разработчик инструмента или лаборант.</p>
+        <br>
+        <p><b>Эвристика</b> (Эвристическое программирование) — эмпирическое правило, упрощающее или ограничивающее поиск решений в предметной области, которая является сложной или недоступной всякому пониманию.</p>
+        <br>
+        <p><b>Экспертная система</b> — компьютерная программа, использующая экспертные знания для обеспечения высокоэффективного решения задач в некоторой узкой предметной области. Такие программы, как правило, представляют знания символически, исследуют и объясняют свои процессы рассуждения и предназначены для тех предметных областей, в которых людям для достижения мастерства необходимы годы специального обучения и практики.</p>
+        <br>
+        <p><b>ИТ</b> — информационные технологии.</p>
+    </div>
+</div>
+
+<div class="back">
+    <a href="{% url 'vebpage:base' %}" class="btn-back-to-main">Обратно на главную</a>
+</div>
+
+{% endblock %}

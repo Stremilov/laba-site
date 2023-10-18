@@ -1,0 +1,140 @@
+{% extends 'vebpage/base.html' %}
+
+
+{% block head %}
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+<style>
+
+    header {
+        font-family: Geneva;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    header .logo {
+        color: black;
+        font-size: 2rem;
+        text-decoration: none;
+        font-size: 36px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .theme {
+        height: 40px;
+        width: 100px;
+        background-color: #00ffb6;
+        text-align: center;
+        font-size: 20px;
+        font-family: Geneva;
+        padding: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        border-bottom-color: black;
+        border-left-color: black;
+        border-right-color: black;
+        border-top-color: black;
+        border-top-width: 1px;
+        border-bottom-width: 1px;
+        border-left-width: 1px;
+        border-right-width: 1px;
+        border-bottom-style: solid;
+        border-top-style: solid;
+        border-left-style: solid;
+        border-right-style: solid;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+    }
+    body {
+        margin-left: 15%;
+        margin-right: 15%;
+        background-color: #c4c2c27c;
+    }
+
+    body .btn-next {
+        position: absolute;
+        right: 5%;
+        top: 50%;
+        text-decoration: none;
+        padding: 0.5em 1.5em;
+        font-size: 1.5em;
+        color: #fff;
+        background-color: #67ada9;
+        border-width: 0;
+        border-bottom: 4px solid #547b80;
+        border-radius: 0.4em;
+    }
+
+     body .btn-pred {
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        text-decoration: none;
+        padding: 0.5em 1.5em;
+        font-size: 1.5em;
+        color: #fff;
+        background-color: #67ada9;
+        border-width: 0;
+        border-bottom: 4px solid #547b80;
+        border-radius: 0.4em;
+    }
+
+    body .btn-next:active {
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, .5);
+   }
+
+   body .btn-pred:active {
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, .5);
+   }
+
+   .text {
+        margin-top: 20%;
+        font-size: 18px;
+   }
+
+</style>
+{% endblock %}
+
+{% block title %}
+First
+{% endblock %}
+
+{% block body %}
+<header>
+    <a href="{% url 'vebpage:base' %}" class="logo">LevIt</a>
+</header>
+
+<section>
+    <div class="theme">
+        4 слайд
+    </div>
+</section>
+
+<section>
+    <div>
+        <a href="{% url 'vebpage:3-sl' %}" class="btn-pred"><</a>
+    </div>
+
+    <div>
+        <a href="" class="btn-next">></a>
+    </div>
+</section>
+
+<section class="text">
+    <p>§ Чарльз Бэббидж считается пионером вычислительной техники.
+        Бэббидж имел чёткое представление о механических вычислениях чисел и таблиц
+        С 1810-х годов он начал воплощать свои идеи в реальность, разработав калькулятор для вычисления чисел до 8 знаков после запятой.
+        Продолжая успех этой идеи, Бэббидж работал над созданием машины, которая могла вычислять числа до 20 знаков после запятой.</p>
+    <p>§ К 1830 году Бэббидж придумал план, как разработать машину, которая могла использовать перфокарты для выполнения арифметических операций.
+        Предполагалось, что машина должна хранить числа в блоках памяти и содержать форму последовательного управления.
+        Это означает, что операции должны проводиться последовательно таким образом, чтобы машина возвращала ответ в виде удачи или неудачи.
+        Эта машина стала известной как «аналитическая машина», которая стала первым прототипом современного компьютера</p>
+    <p>§ Гораздо позже, 21 января 1888, прошло частичное испытание «Аналитической машины Бэббиджа», которую построил его сын.
+        На этом устройстве было успешно вычислено число Пи с точностью до 29 знаков</p>
+</section>
+{% endblock %}
