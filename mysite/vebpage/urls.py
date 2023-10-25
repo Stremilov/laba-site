@@ -24,7 +24,8 @@ from .views import (
     PresentationPage20View,
     PresentationPage21View,
     PresentationPage22View,
-    PresentationPage23View
+    PresentationPage23View,
+    PresentationPage24View
 )
 
 
@@ -55,4 +56,5 @@ urlpatterns = [
     path('pres/21/', PresentationPage21View.as_view(), name='21-sl'),
     path('pres/22/', PresentationPage22View.as_view(), name='22-sl'),
     path('pres/23/', PresentationPage23View.as_view(), name='23-sl'),
+    path('pres/24/', PresentationPage24View.as_view(), name='24-sl'),
 ]

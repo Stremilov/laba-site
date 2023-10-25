@@ -1,0 +1,143 @@
+{% extends 'vebpage/base.html' %}
+
+
+{% block head %}
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+<style>
+
+    header {
+        font-family: Geneva;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    header .logo {
+        color: black;
+        font-size: 2rem;
+        text-decoration: none;
+        font-size: 36px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .theme {
+        height: 40px;
+        width: 100px;
+        background-color: #00ffb6;
+        text-align: center;
+        font-size: 20px;
+        font-family: Geneva;
+        padding: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        border-bottom-color: black;
+        border-left-color: black;
+        border-right-color: black;
+        border-top-color: black;
+        border-top-width: 1px;
+        border-bottom-width: 1px;
+        border-left-width: 1px;
+        border-right-width: 1px;
+        border-bottom-style: solid;
+        border-top-style: solid;
+        border-left-style: solid;
+        border-right-style: solid;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+    }
+    body {
+        margin-left: 15%;
+        margin-right: 15%;
+        background-color: #c4c2c27c;
+    }
+
+    body .btn-next {
+        position: absolute;
+        right: 5%;
+        top: 50%;
+        text-decoration: none;
+        padding: 0.5em 1.5em;
+        font-size: 1.5em;
+        color: #fff;
+        background-color: #67ada9;
+        border-width: 0;
+        border-bottom: 4px solid #547b80;
+        border-radius: 0.4em;
+    }
+
+     body .btn-pred {
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        text-decoration: none;
+        padding: 0.5em 1.5em;
+        font-size: 1.5em;
+        color: #fff;
+        background-color: #67ada9;
+        border-width: 0;
+        border-bottom: 4px solid #547b80;
+        border-radius: 0.4em;
+    }
+
+    body .btn-next:active {
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, .5);
+   }
+
+   body .btn-pred:active {
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, .5);
+   }
+
+   .text {
+        margin-top: 10%;
+        font-size: 18px;
+   }
+
+</style>
+{% endblock %}
+
+{% block title %}
+First
+{% endblock %}
+
+{% block body %}
+<header>
+    <a href="{% url 'vebpage:base' %}" class="logo">LevIt</a>
+</header>
+
+<section>
+    <div class="theme">
+        5 слайд
+    </div>
+</section>
+
+<section>
+    <div>
+        <a href="{% url 'vebpage:4-sl' %}" class="btn-pred"><</a>
+    </div>
+
+    <div>
+        <a href="{% url 'vebpage:6-sl' %}" class="btn-next">></a>
+    </div>
+</section>
+
+<section class="text">
+    <p>§ Интеллектуальные информационные технологии (ИИТ) или искусственный интеллект (ИИ) имеют долгую историю, но их зарождение как академической исследовательской и инженерной области произошло в 1950-1960 годах.</p>
+        <p>Ниже приведены несколько ключевых моментов и событий из этого периода:.</p>
+
+    <br>
+    <p>1. Ранние символические ИИ системы: В 1950-1960 годах, исследователи разрабатывали ранние символические ИИ системы, которые использовали правила и символы для моделирования решения проблем.
+        Примером может служить Logic Theorist (Логический Теоретик), созданный Алленом Ньюэллом и Хербертом Саймоном, который был способен доказывать теоремы в формальной логике.</p>
+    <p>2. Термин "искусственный интеллект": Термин "искусственный интеллект" был впервые введен в 1956 году на конференции в Дартмутском колледже.
+        Эта конференция считается важным моментом в истории ИИ, так как она объединила ученых и исследователей, которые занимались созданием машин, способных к размышлениям, искусственному обучению и решению задач.</p>
+    <p>3. Исследование языка и машинного перевода: В это время также велось исследование в области языка и машинного перевода.
+        Например, система Georgetown-IBM Experiment в начале 1950-х годов проводила попытки автоматического перевода текстов с одного языка на другой.</p>
+    <br>
+    <p>Этот период можно рассматривать как зарождение ИИ как области исследований, хотя многие из основных принципов и технологий, которые мы сегодня связываем с ИИ, развивались и усовершенствовались вплоть до наших дней.
+        Рост интереса к ИИ и интеллектуальным информационным технологиям привел к созданию множества методов и технологий, таких как машинное обучение, нейронные сети и глубокое обучение, которые играют важную роль в современных приложениях ИИ.</p>
+</section>
+{% endblock %}

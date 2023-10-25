@@ -1,0 +1,144 @@
+{% extends 'vebpage/base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+    <style>
+        header {
+            font-family: Geneva;
+            text-align: center;
+            padding-top: 50px;
+        }
+    
+        header .logo {
+            color: black;
+            font-size: 2rem;
+            text-decoration: none;
+            font-size: 36px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .theme {
+            height: 40px;
+            width: 100px;
+            background-color: #00ffb6;
+            text-align: center;
+            font-size: 20px;
+            font-family: Geneva;
+            padding: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+            border-bottom-color: black;
+            border-left-color: black;
+            border-right-color: black;
+            border-top-color: black;
+            border-top-width: 1px;
+            border-bottom-width: 1px;
+            border-left-width: 1px;
+            border-right-width: 1px;
+            border-bottom-style: solid;
+            border-top-style: solid;
+            border-left-style: solid;
+            border-right-style: solid;
+            border-top-left-radius: 100px;
+            border-top-right-radius: 100px;
+            border-bottom-right-radius: 100px;
+            border-bottom-left-radius: 100px;
+        }
+
+        body {
+            margin-left: 15%;
+            margin-right: 15%;
+            background-color: #c4c2c27c;
+        }
+
+        body .btn-next {
+            position: absolute;
+            right: 5%;
+            top: 50%;
+            text-decoration: none;
+            padding: 0.5em 1.5em;
+            font-size: 1.5em;
+            color: #fff;
+            background-color: #67ada9;
+            border-width: 0;
+            border-bottom: 4px solid #547b80;
+            border-radius: 0.4em;
+        }
+    
+         body .btn-pred {
+            position: absolute;
+            left: 5%;
+            top: 50%;
+            text-decoration: none;
+            padding: 0.5em 1.5em;
+            font-size: 1.5em;
+            color: #fff;
+            background-color: #67ada9;
+            border-width: 0;
+            border-bottom: 4px solid #547b80;
+            border-radius: 0.4em;
+        }
+    
+        body .btn-next:active {
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, .5);
+       }
+    
+       body .btn-pred:active {
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, .5);
+       }
+
+       .text {
+        margin-top: 10%;
+        font-size: 18px;
+   }
+    </style>
+{% endblock %}
+
+{% block title %}
+{% endblock %}
+
+{% block body %}
+<header>
+    <a href="{% url 'vebpage:base' %}" class="logo">LevIt</a>
+</header>
+
+<section>
+    <div class="theme">
+        6 слайд
+    </div>
+</section>
+
+<section>
+    <div>
+        <a href="{% url 'vebpage:5-sl' %}" class="btn-pred"><</a>
+    </div>
+
+    <div>
+        <a href="{% url 'vebpage:7-sl' %}" class="btn-next">></a>
+    </div>
+</section>
+
+<section class="text">
+    <p>§ Зарождение символической обработки информации в 1960-1970 годах представляет собой важную эпоху в истории искусственного интеллекта (ИИ).
+        В этот период появилось множество ключевых концепций, методов и систем, среди которых "Dendral" играл важную роль. 
+        Ниже приведён обзор зарождения символьной обработки:</p>
+    <br>
+    <p>1. Символическая обработка информации: В 1960-1970 годах в ИИ начали разрабатывать исследовательские подходы, основанные на символической обработке информации.
+        Этот подход сосредотачивается на использовании символов и символьных правил для представления и обработки знаний.</p>
+    <br>
+    <p>2. Dendral: Одним из самых известных и ранних примеров символической обработки информации был проект Dendral.
+        Dendral был разработан в конце 1960-х годов в Стэнфордском исследовательском институте и был первой экспертной системой, предназначенной для химического анализа масс-спектрометрических данных.
+        Он использовал символьные знания химиков и символьные правила для определения структуры органических молекул.
+        Dendral оказал огромное влияние на развитие экспертных систем и стал демонстрацией того, как символьные методы могут быть использованы для решения задач экспертного уровня.</p>
+    <br>
+    <p>4. Исследования в области языка и понимания текста: В это время также начались исследования в области обработки естественного языка и понимания текста.
+        Например, система SHRDLU, разработанная Терри Уиноградом в Массачусетском технологическом институте в 1970 году, демонстрировала способность понимать и взаимодействовать с текстом на естественном языке.</p>
+    <br>
+    <p>Этот период 1960-1970 годов оставил значительный след в истории ИИ, и многие из его концепций и технологий считаются важными и актуальными в современных исследованиях и разработках в области искусственного интеллекта.</p>
+</section>
+
+{% endblock %}

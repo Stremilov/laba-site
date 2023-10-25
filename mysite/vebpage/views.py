@@ -82,7 +82,7 @@ class PresentationPage13View(View):
 class PresentationPage14View(View):
 
     def get(self, request: HttpRequest) -> HttpResponse:
-        return render(request, 'vebpage/15-sl.html')
+        return render(request, 'vebpage/14-sl.html')
 
 class PresentationPage15View(View):
 
@@ -128,3 +128,8 @@ class PresentationPage23View(View):
 
     def get(self, request: HttpRequest) -> HttpResponse:
         return render(request, 'vebpage/23-sl.html')
+
+class PresentationPage24View(View):
+
+    def get(self, request: HttpRequest) -> HttpResponse:
+        return render(request, 'vebpage/24-sl.html')
